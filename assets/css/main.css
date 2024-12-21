@@ -763,3 +763,13 @@
 		transform:translateX(25%);
 	}
 	}
+
+html {
+  scroll-behavior: smooth;
+  animation: smoothScroll 3.2s ease-in-out;
+}
+
+@keyframes smoothScroll {
+  from { scroll-timeline-position: 0%; }
+  to { scroll-timeline-position: 100%; }
+}
