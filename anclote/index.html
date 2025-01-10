@@ -29,7 +29,6 @@
             <option value="ANCLOTE5">5 - River</option>
         </select>
 
-
         <div class="row">
             <div class="col-md-6">
                 <div class="accordion" id="fishingSpots"></div>
@@ -194,8 +193,10 @@ const fishingData = {
             updateContent(this.value);
         });
 
-        // Initialize with first image's content
-        updateContent('ANCLOTE1');
+        // Get the currently selected value on page load
+        const currentSelection = document.getElementById('imageSelect').value;
+        // Initialize with current selection instead of hardcoding ANCLOTE1
+        updateContent(currentSelection);
     </script>
 </body>
 </html>
