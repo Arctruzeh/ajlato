@@ -1,0 +1,9 @@
+.container { margin-top: 20px; }
+.image-container {
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+#imageSelect { margin-bottom: 20px; }
